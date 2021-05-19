@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { FormComponent } from '../app/form/form.component';
+import { TableComponent } from '../app/table/table.component';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +8,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  utenti = [
+    {nome: 'Max', citta: 'Roma'},
+    {nome: 'Mario', citta: 'Napoli'},
+    {nome: 'Simona', citta: 'Milano'}
+  ];
 
 }
