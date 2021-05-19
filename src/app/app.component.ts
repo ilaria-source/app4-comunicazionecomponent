@@ -8,6 +8,7 @@ import { TableComponent } from '../app/table/table.component';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  title="app4-comunicazionecomponent";
   utenti = [
     {nome: 'Max', citta: 'Roma'},
     {nome: 'Mario', citta: 'Napoli'},

@@ -6,9 +6,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./table.component.css']
 })
 export class TableComponent implements OnInit {
-//users= [{ nome: string, citta: string }];
-users: Array<{nome: string, citta: string}> = [];
+//users : [{ nome: string, citta: string }];
 
+public users: Array<{nome: string, citta: string}> = [];
 
   // users = [
   //   {nome: 'Max', citta: 'Roma'},

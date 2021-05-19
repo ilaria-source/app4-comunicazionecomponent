@@ -1,6 +1,7 @@
 <div class="container">
   <div class="row">
     <div class="col-xs-6 col-xs-offset-3">
+      <br>
       <app-form></app-form>
     </div>
   </div>
@@ -9,7 +10,13 @@
 <div class="container">
   <div class="row">
     <div class="col-xs-6 col-xs-offset-3">
-      <app-table users='utenti'></app-table>
+      <app-table [users]="utenti">
+
+      <!-- </app-table>  *ngFor="let user of utenti">
+        {{user.nome}}
+        {{user.citta}} -->
+
+      </app-table>
     </div>
   </div>
 </div>
