@@ -1,5 +1,6 @@
-<input type="text" class="form-control">
+<input type="text" class="form-control" #nome>
 <br>
-<input type="text" class="form-control">
-<button type="button" class="btn btn-primary">Salva</button>
+<input type="text" class="form-control" #citta>
+<br>
+<button type="button" class="btn btn-primary" (click)="addUser(nome.value, citta.value)">Salva</button>
 

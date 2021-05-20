@@ -1,9 +1,11 @@
 <table class="table">
   <tr>
+    <th>#</th>
     <th> Nome </th>
     <th> Città </th>
   </tr>
-  <tr *ngFor="let user of users">
+  <tr *ngFor="let user of users; let i = index" [ngStyle]="{color: user.nome === 'Simona' ? 'red':'blue'}">
+    <td> {{i +1}} </td>
     <td> {{user.nome}} </td>
     <td> {{user.citta}} </td>
   </tr>

@@ -8,7 +8,7 @@ import { Component, OnInit, Input } from '@angular/core';
 export class TableComponent implements OnInit {
   @Input()
   users: { nome: string; citta: string; }[] = [];
-
+//quando instanzi un oggetto, ricordati di dargli dei dati sennò sclera tutto.
 
 // public users: Array<{nome: string, citta: string}> = [];
 
@@ -18,7 +18,7 @@ export class TableComponent implements OnInit {
   //   {nome: 'Simona', citta: 'Milano'}
   // ];
 
-  constructor() {   }
+  constructor() {}
 
   ngOnInit(): void {
   }

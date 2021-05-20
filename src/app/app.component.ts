@@ -15,4 +15,10 @@ export class AppComponent {
     {nome: 'Simona', citta: 'Milano'}
   ];
 
+  getUser(event: {nome: string, citta: string}){
+    this.utenti.push(
+      {nome: event.nome, citta: event.citta}
+    );
+  }
+
 }
