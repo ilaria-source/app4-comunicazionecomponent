@@ -10,13 +10,7 @@
 <div class="container">
   <div class="row">
     <div class="col-xs-6 col-xs-offset-3">
-      <app-table [users]="utenti">
-
-      <!-- </app-table>  *ngFor="let user of utenti">
-        {{user.nome}}
-        {{user.citta}} -->
-
-      </app-table>
+      <app-table [users]="utenti" (user)="getRemoveUser($event)">   </app-table>
     </div>
   </div>
 </div>

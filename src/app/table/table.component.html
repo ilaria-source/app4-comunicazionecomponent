@@ -4,10 +4,12 @@
     <th> Nome </th>
     <th> Città </th>
   </tr>
-  <tr *ngFor="let user of users; let i = index" [ngStyle]="{color: user.nome === 'Simona' ? 'red':'blue'}">
+  <tr *ngFor="let user of users; let i = index" [ngStyle]="{color: user.nome === 'Simona' ? '#b3003b':'#006699'}">
     <td> {{i +1}} </td>
     <td> {{user.nome}} </td>
     <td> {{user.citta}} </td>
+    <td>
+      <button type="button" class="btn btn-danger" (click)=removeUser(i)> Cancella </button>  </td>
   </tr>
 </table>
 
