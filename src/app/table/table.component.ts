@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-table',
@@ -6,9 +6,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./table.component.css']
 })
 export class TableComponent implements OnInit {
-//users : [{ nome: string, citta: string }];
+  @Input()
+  users: { nome: string; citta: string; }[] = [];
 
-public users: Array<{nome: string, citta: string}> = [];
+
+// public users: Array<{nome: string, citta: string}> = [];
 
   // users = [
   //   {nome: 'Max', citta: 'Roma'},
@@ -16,7 +18,7 @@ public users: Array<{nome: string, citta: string}> = [];
   //   {nome: 'Simona', citta: 'Milano'}
   // ];
 
-  constructor() { }
+  constructor() {   }
 
   ngOnInit(): void {
   }
